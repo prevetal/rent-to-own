@@ -1,0 +1,256 @@
+@media print,
+(max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 32px;
+        --font_size_title_s: 24px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .mob_menu_btn
+    {
+        display: flex;
+    }
+
+
+    header .menu
+    {
+        position: absolute;
+        top: 100%;
+        left: 100%;
+
+        flex-direction: column;
+
+        width: 200px;
+        margin: 0;
+        padding: var(--cont_padding);
+
+        transition: transform .3s linear;
+
+        color: var(--dark_color);
+        background: var(--light_color);
+    }
+
+
+    header .menu.show
+    {
+        transform: translateX(-100%);
+    }
+
+
+    header .menu_item > a
+    {
+        opacity: 1;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .title
+    {
+        width: 424px;
+    }
+
+
+    .first_section .desc
+    {
+        width: 368px;
+    }
+
+
+    .first_section .bg img
+    {
+        object-position: 40% 50%;
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog .block_head .title
+    {
+        width: calc(100% - 168px);
+    }
+
+
+    .catalog .block_head .desc
+    {
+        width: calc(100% - 168px);
+        margin-left: auto;
+    }
+
+
+    .catalog .swiper-slide
+    {
+        width: 240px;
+    }
+
+
+    .catalog .swiper-slide.big
+    {
+        width: 348px;
+    }
+
+
+
+    /*----------
+        Calc
+    ----------*/
+    .calc .block_head,
+    .calc .details,
+    .calc .plan
+    {
+        padding: var(--cont_padding);
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps .step
+    {
+        padding-left: 40px;
+
+        gap: var(--cont_padding);
+    }
+
+
+    .steps .step .number
+    {
+        width: 132px;
+
+        font-size: 90px;
+        line-height: 96px;
+    }
+
+
+    .steps .step .name
+    {
+        width: 200px;
+        margin-top: 8px;
+
+        font-size: 20px;
+    }
+
+
+    .steps .step .desc,
+    .steps .step .desc.big
+    {
+        width: calc(100% - 380px);
+    }
+
+
+
+    /*----------------
+        advantages
+    ----------------*/
+    .advantages .block_head .pre_title
+    {
+        width: 100%;
+        margin-top: 0;
+    }
+
+
+    .advantages .block_head > div:first-child
+    {
+        order: 2;
+
+        width: 100%;
+    }
+
+
+    .advantages .grid
+    {
+        height: 570px;
+    }
+
+
+    .advantages .item1
+    {
+        width: 33.333%;
+        height: 381px;
+    }
+
+
+    .advantages .item2
+    {
+        left: calc(33.333% - 1px);
+
+        width: calc(33.333% + 1px);
+        height: calc(33.333% + 1px);
+    }
+
+
+    .advantages .item3
+    {
+        right: 0;
+
+        width: calc(33.333% + 1px);
+        height: calc(33.333% + 1px);
+    }
+
+
+    .advantages .item4
+    {
+        top: 33.333%;
+        left: calc(33.333% - 1px);
+
+        width: calc(33.333% + 1px);
+        height: calc(33.333% + 1px);
+    }
+
+
+    .advantages .item5
+    {
+        top: 33.333%;
+        right: 0;
+        bottom: auto;
+        left: auto;
+
+        width: calc(33.333% + 1px);
+        height: calc(33.333% + 1px);
+    }
+
+
+    .advantages .item6
+    {
+        right: 0;
+
+        width: 100%;
+        height: 33.333%;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .data
+    {
+        width: calc(50% - var(--cont_padding));
+
+        gap: var(--cont_padding);
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .swiper-slide
+    {
+        width: 320px;
+    }
+}

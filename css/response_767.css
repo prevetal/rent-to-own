@@ -1,0 +1,481 @@
+@media (max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --cont_padding: 20px;
+        --font_size_title: 28px;
+        --font_size_title_s: 22px;
+    }
+
+
+    .swiper-controls
+    {
+        display: none;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head .title
+    {
+        width: calc(100% - 52px);
+
+        font-size: 15px;
+        line-height: calc(100% + 8px);
+    }
+
+
+    .accordion_item .head .icon
+    {
+        width: 32px;
+        height: 32px;
+    }
+
+
+    .accordion_item .head .icon svg
+    {
+        width: 15px;
+        height: 15px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .phones
+    {
+        font-size: 14px;
+    }
+
+
+    header .messengers a
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    header .mob_menu_btn
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    header .mob_menu_btn span
+    {
+        width: 20px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form
+    {
+        --form_input_height: 44px;
+    }
+
+
+    .form .whatsapp_link,
+    .form .submit_btn
+    {
+        height: 44px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        display: flex;
+        flex-direction: column;
+
+        padding-bottom: 68px;
+    }
+
+
+    .first_section .cont
+    {
+        order: 2;
+
+        padding-block: 0;
+    }
+
+
+    .first_section .desc
+    {
+        width: 100%;
+    }
+
+
+    .first_section .info
+    {
+        width: 100%;
+    }
+
+
+    .first_section .info .btn
+    {
+        height: 44px;
+    }
+
+
+    .first_section .bg
+    {
+        position: relative;
+
+        width: 200%;
+        margin-top: var(--cont_padding);
+        margin-bottom: -60px;
+        margin-left: -75%;
+    }
+
+
+    .first_section .bg:before
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+        height: 50%;
+
+        content: '';
+
+        background: linear-gradient(to bottom, #000 5%, rgba(0,0,0,.0) 100%);
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog
+    {
+        margin-bottom: 68px;
+    }
+
+
+    .catalog .block_head .title,
+    .catalog .block_head .desc
+    {
+        width: 100%;
+        padding-left: calc(var(--cont_padding_double));
+    }
+
+
+    .catalog .swiper-slide
+    {
+        width: 220px;
+    }
+
+
+    .catalog .swiper-slide.big
+    {
+        width: 320px;
+    }
+
+
+
+    /*----------
+        Calc
+    ----------*/
+    .calc .block_head .title,
+    .calc .block_head .desc
+    {
+        width: 100%;
+    }
+
+
+    .calc .details
+    {
+        width: 100%;
+    }
+
+
+    .calc .plan
+    {
+        width: 100%;
+
+        border-top: 1px solid;
+        border-left: none;
+    }
+
+
+    .calc .bottom > div:first-child
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .calc .bottom .exp
+    {
+        justify-content: center;
+    }
+
+
+    .calc .bottom .link a
+    {
+        height: 44px;
+        padding-inline: var(--cont_padding_double);
+    }
+
+
+
+    /*-----------------
+        Order block
+    -----------------*/
+    .order_block
+    {
+        padding-block: 68px;
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps
+    {
+        margin-bottom: 68px;
+        padding-block: 68px;
+    }
+
+
+    .steps .block_head .title,
+    .steps .block_head .desc
+    {
+        width: 100%;
+        padding-inline: var(--cont_padding);
+    }
+
+
+    .steps .step
+    {
+        padding-left: var(--cont_padding);
+    }
+
+
+    .steps .step .number
+    {
+        width: 100px;
+
+        font-size: 60px;
+        line-height: 64px;
+    }
+
+
+    .steps .step .name
+    {
+        align-self: center;
+
+        width: calc(100% - 120px);
+        margin-top: 0;
+
+        font-size: 18px;
+    }
+
+
+    .steps .step .desc,
+    .steps .step .desc.big
+    {
+        width: 100%;
+        margin-top: 0;
+    }
+
+
+
+    /*----------------
+        advantages
+    ----------------*/
+    .advantages .grid
+    {
+        height: 758px;
+    }
+
+
+    .advantages .item1
+    {
+        width: 50%;
+        height: 380px;
+    }
+
+
+    .advantages .item2
+    {
+        left: calc(50% - 1px);
+
+        width: calc(50% + 1px);
+        height: 190px;
+    }
+
+
+    .advantages .item3
+    {
+        top: 189px;
+
+        width: calc(50% + 1px);
+        height: 191px;
+    }
+
+
+    .advantages .item4
+    {
+        top: 379px;
+        left: 0;
+
+        width: 50%;
+        height: 190px;
+    }
+
+
+    .advantages .item5
+    {
+        top: 379px;
+        left: calc(50% - 1px);
+
+        width: calc(50% + 1px);
+        height: 190px;
+    }
+
+
+    .advantages .item6
+    {
+        height: 190px;
+    }
+
+
+    .advantages .item .name
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info
+    {
+        margin-bottom: 68px;
+        padding-block: 60px;
+    }
+
+
+    .about_info .data
+    {
+        width: 100%;
+    }
+
+
+    .about_info .link a
+    {
+        height: 44px;
+    }
+
+
+    .about_info .map
+    {
+        width: 100%;
+        height: 280px;
+        margin-top: var(--cont_padding_double);
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews
+    {
+        margin-bottom: 68px;
+        padding-bottom: 68px;
+    }
+
+
+    .reviews .block_head > div:first-child
+    {
+        max-width: 100%;
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .FAQ
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .FAQ .block_head
+    {
+        margin-bottom: 32px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .col
+    {
+        width: 50%;
+        padding-right: var(--cont_padding_double);
+    }
+
+
+    footer .links
+    {
+        width: 50%;
+        padding-left: var(--cont_padding_double);
+    }
+
+
+    footer .links ~ .links
+    {
+        padding-right: var(--cont_padding_double);
+        padding-left: 0;
+
+        border-top: 1px solid rgba(255, 255, 255, .1);
+    }
+
+
+    footer .contacts
+    {
+        width: 50%;
+        padding-left: var(--cont_padding_double);
+
+        border-top: 1px solid rgba(255, 255, 255, .1);
+    }
+
+
+    footer .links + .sep
+    {
+        display: none;
+    }
+
+
+    footer .col + .sep,
+    footer .links ~ .links + .sep
+    {
+        display: block;
+
+        margin-left: -1px;
+    }
+}

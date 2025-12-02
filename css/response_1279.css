@@ -1,0 +1,533 @@
+@media print,
+(max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --custom_scroll_width: 5px;
+        --custom_scroll_height: 5px;
+        --font_size_title: 36px;
+        --font_size_title_s: 24px;
+    }
+
+
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head
+    {
+        padding-block: var(--cont_padding_half);
+        padding-inline: var(--cont_padding) var(--cont_padding_half);
+    }
+
+
+    .accordion_item .data
+    {
+        margin-top: 0;
+        padding-block: 0 var(--cont_padding);
+        padding-inline: var(--cont_padding) var(--cont_padding_half);
+    }
+
+
+    .accordion_item .text_block
+    {
+        width: 520px;
+
+        line-height: calc(100% + 8px);
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .menu
+    {
+        gap: var(--cont_padding);
+    }
+
+
+    header .messengers a
+    {
+        width: 48px;
+        height: 48px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form
+    {
+        --form_input_height: 48px;
+    }
+
+
+    .form .whatsapp_link,
+    .form .submit_btn
+    {
+        height: 48px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .title
+    {
+        line-height: calc(100% + 12px);
+    }
+
+
+    .block_head .desc
+    {
+        line-height: calc(100% + 8px);
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .cont
+    {
+        padding-block: 120px 100px;
+    }
+
+
+    .first_section .title
+    {
+        width: 480px;
+
+        line-height: calc(100% + 16px);
+    }
+
+
+    .first_section .desc
+    {
+        width: 420px;
+        padding-left: var(--inner_gap);
+    }
+
+
+    .first_section .info
+    {
+        margin-top: var(--cont_padding_double);
+        margin-left: 0;
+        padding-block: var(--inner_gap);
+        padding-inline: var(--inner_gap);
+    }
+
+
+    .first_section .info .btn
+    {
+        height: 48px;
+    }
+
+
+    .first_section .info .exp > *
+    {
+        padding-block: 5px 6px;
+        padding-inline: 8px;
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .catalog .block_head .pre_title
+    {
+        padding-left: calc(var(--cont_padding_double));
+    }
+
+
+    .catalog .block_head .pre_title:before
+    {
+        width: calc(var(--cont_padding_double) - 8px);
+    }
+
+
+    .catalog .block_head .title
+    {
+        width: 384px;
+    }
+
+
+    .catalog .block_head .desc
+    {
+        width: 384px;
+
+        line-height: calc(100% + 12px);
+    }
+
+
+    .catalog .swiper-slide
+    {
+        width: 260px;
+    }
+
+
+    .catalog .swiper-slide.big
+    {
+        width: 384px;
+    }
+
+
+    .catalog .item
+    {
+        padding-block: var(--inner_gap);
+        padding-inline: var(--inner_gap);
+    }
+
+
+
+    /*----------
+        Calc
+    ----------*/
+    .calc
+    {
+        margin-bottom: 68px;
+    }
+
+
+    .calc .details .form
+    {
+        --form_line_offset: var(--inner_gap);
+        --form_input_height: 60px;
+    }
+
+
+    .calc .plan .items
+    {
+        gap: var(--cont_padding);
+    }
+
+
+
+    .calc .bottom
+    {
+        padding-block: var(--inner_gap);
+
+        gap: var(--cont_padding);
+    }
+
+
+    .calc .bottom .link a
+    {
+        height: 48px;
+        padding-inline: var(--cont_padding);
+    }
+
+
+
+    /*-----------------
+        Order block
+    -----------------*/
+    .order_block
+    {
+        padding-block: 80px;
+    }
+
+
+    .order_block .block_head:after
+    {
+        left: -24px;
+
+        width: 100vw;
+    }
+
+
+    .order_block .block_head .title
+    {
+        width: 560px;
+    }
+
+
+    .order_block .block_head .desc
+    {
+        width: 460px;
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps
+    {
+        margin-bottom: 80px;
+        padding-block: 80px;
+    }
+
+
+    .steps .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .steps .step
+    {
+        margin-top: 40px;
+        padding-left: 80px;
+
+        gap: 30px;
+    }
+
+
+    .steps .step:after
+    {
+        bottom: -41px;
+    }
+
+
+    .steps .step .name
+    {
+        width: 224px;
+        margin-top: 10px;
+
+        font-size: 22px;
+    }
+
+
+    .steps .step .desc,
+    .steps .step .desc.big
+    {
+        width: 400px;
+    }
+
+
+
+    /*----------------
+        advantages
+    ----------------*/
+    .advantages
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .advantages .block_head
+    {
+        margin-bottom: var(--cont_padding_double);
+    }
+
+
+    .advantages .block_head .pre_title
+    {
+        line-height: calc(100% + 16px);
+    }
+
+
+    .advantages .grid:before
+    {
+        left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .advantages .item
+    {
+        padding: var(--inner_gap);
+    }
+
+
+    .advantages .item1
+    {
+        width: 248px;
+    }
+
+
+    .advantages .item2
+    {
+        left: 247px;
+
+        width: 280px;
+    }
+
+
+    .advantages .item3
+    {
+        width: 274px;
+    }
+
+
+    .advantages .item5
+    {
+        left: 247px;
+
+        width: 326px;
+    }
+
+
+    .advantages .item .icon
+    {
+        width: 48px;
+        height: 48px;
+        margin-bottom: var(--inner_gap);
+    }
+
+
+    .advantages .item .name
+    {
+        line-height: calc(100% + 8px);
+    }
+
+
+    .advantages .item .desc
+    {
+        margin-top: var(--cont_padding_half);
+
+        line-height: calc(100% + 10px);
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info
+    {
+        margin-bottom: 80px;
+        padding-block: 68px;
+    }
+
+
+    .about_info .data
+    {
+        width: calc(50% - var(--cont_padding_double));
+
+        gap: 40px;
+    }
+
+
+    .about_info .link a
+    {
+        height: 48px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews
+    {
+        margin-bottom: 80px;
+        padding-bottom: 80px;
+    }
+
+
+    .reviews .block_head
+    {
+        margin-bottom: var(--cont_padding_double);
+    }
+
+
+    .reviews .swiper-slide
+    {
+        width: 400px;
+    }
+
+
+    .reviews .review .info
+    {
+        padding: var(--cont_padding);
+
+        gap: var(--cont_padding_half);
+    }
+
+
+    .reviews .review .date
+    {
+        margin-bottom: 0;
+    }
+
+
+    .reviews .review .name
+    {
+        line-height: calc(100% + 6px);
+    }
+
+
+    .reviews .review .desc
+    {
+        line-height: calc(100% + 8px);
+    }
+
+
+    .reviews .review .link a
+    {
+        height: 60px;
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .FAQ
+    {
+        margin-bottom: 100px;
+    }
+
+
+    .FAQ .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .col
+    {
+        width: 170px;
+        padding-block: 40px;
+
+        gap: var(--inner_gap_s);
+    }
+
+
+
+    footer .links
+    {
+        padding-block: 40px;
+
+        gap: 16px;
+    }
+
+
+    footer .links .items.columns
+    {
+        gap: var(--cont_padding);
+    }
+
+
+
+    footer .contacts
+    {
+        padding-block: 40px;
+    }
+}

@@ -1,0 +1,120 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .phones
+    {
+        display: none;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .submit
+    {
+        gap: var(--inner_gap_s);
+    }
+
+
+    .form .whatsapp_link,
+    .form .submit_btn
+    {
+        width: 100%;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .info .btn
+    {
+        width: 100%;
+        min-width: 0;
+    }
+
+
+
+    /*----------------
+        advantages
+    ----------------*/
+    .advantages .grid
+    {
+        height: auto;
+    }
+
+
+    .advantages .item
+    {
+        position: relative;
+    }
+
+
+    .advantages .item + .item
+    {
+        margin-top: -1px;
+    }
+
+
+    .advantages .item1,
+    .advantages .item2,
+    .advantages .item3,
+    .advantages .item4,
+    .advantages .item5,
+    .advantages .item6
+    {
+        inset: 0;
+
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .col
+    {
+        padding-right: var(--cont_padding);
+    }
+
+
+    footer .links
+    {
+        padding-left: var(--cont_padding);
+    }
+
+
+    footer .links ~ .links
+    {
+        padding-right: var(--cont_padding);
+    }
+
+
+    footer .links .items.columns
+    {
+        gap: var(--inner_gap_s);
+    }
+
+
+    footer .links .items.columns > *
+    {
+        width: 100%;
+    }
+
+
+    footer .contacts
+    {
+        padding-left: var(--cont_padding);
+    }
+}
