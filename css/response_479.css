@@ -1,11 +1,5 @@
 @media (max-width: 479px)
 {
-    /*-------------------
-        Global styles
-    -------------------*/
-
-
-
     /*------------
         Header
     ------------*/
@@ -19,6 +13,12 @@
     /*------------------
         Form elements
     ------------------*/
+    .form .contact_methods label div
+    {
+        height: 44px;
+    }
+
+
     .form .submit
     {
         gap: var(--inner_gap_s);
@@ -29,6 +29,27 @@
     .form .submit_btn
     {
         width: 100%;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block .table_wrap
+    {
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        width: calc(100% + var(--cont_padding_double));
+        margin-inline: calc(var(--cont_padding) * -1);
+        padding-inline: var(--cont_padding);
+    }
+
+
+    .text_block table
+    {
+        width: 768px;
     }
 
 
@@ -80,6 +101,53 @@
 
 
 
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .data .price .old
+    {
+        font-size: 16px;
+    }
+
+
+    .product_info .data .price .current
+    {
+        font-size: 20px;
+    }
+
+
+    .product_info .data .buy .btn
+    {
+        width: 160px;
+    }
+
+
+    .product_info .data .btns
+    {
+        flex-wrap: wrap;
+    }
+
+
+    .product_info .data .btns .btn
+    {
+        width: 100%;
+    }
+
+
+
+    .product_info .features
+    {
+        gap: var(--cont_padding_double) 0;
+    }
+
+
+    .product_info .features > *
+    {
+        width: 33.333%;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
@@ -116,5 +184,36 @@
     footer .contacts
     {
         padding-left: var(--cont_padding);
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding-block: 40px;
+        padding-inline: var(--cont_padding);
+    }
+
+
+    .modal_title
+    {
+        font-size: 26px;
+    }
+
+
+    .modal_desc
+    {
+        margin-top: 8px;
+
+        line-height: calc(100% + 4px);
+    }
+
+
+    .modal .form
+    {
+        --form_input_height: 48px;
     }
 }

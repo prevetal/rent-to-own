@@ -49,6 +49,16 @@
 
 
 
+    /*-------------------
+        Load more btn
+    -------------------*/
+    .load_more_btn
+    {
+        height: 48px;
+    }
+
+
+
     /*------------
         Header
     ------------*/
@@ -66,6 +76,28 @@
 
 
 
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        padding-top: var(--cont_padding);
+    }
+
+
+    .breadcrumbs
+    {
+        line-height: calc(100% + 8px);
+    }
+
+
+    .breadcrumbs .sep
+    {
+        margin-inline: 8px;
+    }
+
+
+
     /*------------------
         Form elements
     ------------------*/
@@ -79,6 +111,102 @@
     .form .submit_btn
     {
         height: 48px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        line-height: calc(100% + 12px);
+    }
+
+
+    .text_block h1
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .text_block h2
+    {
+        margin-bottom: 30px;
+
+        font-size: 28px;
+    }
+
+
+    .text_block h3
+    {
+        margin-bottom: 30px;
+
+        font-size: 24px;
+    }
+
+
+    .text_block hr
+    {
+        margin-block: 30px;
+    }
+
+
+    .text_block .cols
+    {
+        margin-block: 40px;
+    }
+
+
+    .text_block .cols .col
+    {
+        width: calc(50% - 15px);
+    }
+
+
+    .text_block .images_slider
+    {
+        margin-block: var(--cont_padding_double);
+    }
+
+
+    .text_block .action_btn
+    {
+        width: 220px;
+        height: 48px;
+        margin-block: 30px;
+    }
+
+
+    .text_block .btns
+    {
+        margin-block: 30px;
+    }
+
+
+    .text_block .btns .btn
+    {
+        height: 48px;
+        padding-inline: var(--inner_gap);
+    }
+
+
+    .text_block .table_wrap
+    {
+        margin-block: var(--cont_padding_double);
+    }
+
+
+    .text_block table th
+    {
+        height: 48px;
+        padding-inline: 39px;
+    }
+
+
+    .text_block table td
+    {
+        padding: 15px 39px;
     }
 
 
@@ -120,6 +248,8 @@
     {
         width: 420px;
         padding-left: var(--inner_gap);
+
+        line-height: calc(100% + 8px);
     }
 
 
@@ -327,6 +457,18 @@
     }
 
 
+    .advantages.big_m
+    {
+        margin-bottom: 100px;
+    }
+
+
+    .advantages.top_border
+    {
+        padding-top: 80px;
+    }
+
+
     .advantages .block_head
     {
         margin-bottom: var(--cont_padding_double);
@@ -345,19 +487,19 @@
     }
 
 
-    .advantages .item
+    .advantages .grid .item
     {
         padding: var(--inner_gap);
     }
 
 
-    .advantages .item1
+    .advantages .grid .item1
     {
         width: 248px;
     }
 
 
-    .advantages .item2
+    .advantages .grid .item2
     {
         left: 247px;
 
@@ -365,13 +507,13 @@
     }
 
 
-    .advantages .item3
+    .advantages .grid .item3
     {
         width: 274px;
     }
 
 
-    .advantages .item5
+    .advantages .grid .item5
     {
         left: 247px;
 
@@ -379,7 +521,7 @@
     }
 
 
-    .advantages .item .icon
+    .advantages .grid .item .icon
     {
         width: 48px;
         height: 48px;
@@ -387,17 +529,33 @@
     }
 
 
-    .advantages .item .name
+    .advantages .grid .item .name
     {
         line-height: calc(100% + 8px);
     }
 
 
-    .advantages .item .desc
+    .advantages .grid .item .desc
     {
         margin-top: var(--cont_padding_half);
 
         line-height: calc(100% + 10px);
+    }
+
+
+
+    .advantages .row .item .icon
+    {
+        width: 48px;
+        height: 48px;
+        margin-bottom: var(--inner_gap);
+    }
+
+
+    .advantages .row .item .name
+    {
+        font-size: 15px;
+        line-height: calc(100% + 8px);
     }
 
 
@@ -494,6 +652,277 @@
     .FAQ .block_head
     {
         margin-bottom: 40px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info
+    {
+        padding-block: var(--cont_padding) 80px;
+    }
+
+
+    .product_info .images,
+    .product_info .data
+    {
+        width: calc(50% - var(--cont_padding));
+    }
+
+
+    .product_info .data .head
+    {
+        margin-bottom: var(--cont_padding);
+        padding-top: 4px;
+    }
+
+
+    .product_info .data .buy
+    {
+        margin-top: var(--cont_padding);
+        padding-top: 40px;
+    }
+
+
+    .product_info .data .price
+    {
+        gap: 4px;
+    }
+
+
+    .product_info .data .price .old
+    {
+        font-size: 18px;
+        line-height: calc(100% + 2px);
+    }
+
+
+    .product_info .data .price .current
+    {
+        font-size: 22px;
+    }
+
+
+    .product_info .data .buy .btn
+    {
+        width: 220px;
+        height: 48px;
+    }
+
+
+    .product_info .data .btns
+    {
+        margin-top: var(--cont_padding);
+    }
+
+
+    .product_info .data .btns .btn
+    {
+        height: 48px;
+        padding-inline: var(--inner_gap);
+    }
+
+
+    .product_info .features
+    {
+        padding-top: 40px;
+    }
+
+
+
+    /*---------------
+        Text page
+    ---------------*/
+    .text_page
+    {
+        margin-bottom: 80px;
+    }
+
+
+
+    /*-------------------
+        Category head
+    -------------------*/
+    .category_head
+    {
+        padding-block: 120px 60px;
+    }
+
+
+    .category_head .title
+    {
+        width: 440px;
+
+        line-height: calc(100% + 16px);
+    }
+
+
+    .category_head .desc
+    {
+        width: 300px;
+        padding-left: var(--inner_gap);
+
+        line-height: calc(100% + 8px);
+    }
+
+
+    .category_head .desc:before
+    {
+        height: 60px;
+    }
+
+
+    .category_head .bg
+    {
+        width: 1440px;
+    }
+
+
+    .category_head .shadow:before
+    {
+        height: 124px;
+    }
+
+
+    .category_head .shadow .darking3
+    {
+        top: 182px;
+    }
+
+
+
+    /*------------
+        Filter
+    ------------*/
+    .filter .mini_modal_btn
+    {
+        height: 48px;
+
+        font-size: 15px;
+    }
+
+
+    .filter .search
+    {
+        padding: var(--inner_gap) var(--inner_gap) 0;
+    }
+
+
+    .filter .fields .checkbox
+    {
+        padding-block: var(--inner_gap);
+        padding-inline: 50px var(--inner_gap);
+    }
+
+
+
+    /*-------------------
+        Category info
+    -------------------*/
+    .category_info
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .category_info .head
+    {
+        padding-block: var(--inner_gap);
+        padding-inline: var(--inner_gap);
+    }
+
+
+    .category_info .count
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .product
+    {
+        padding: var(--cont_padding);
+    }
+
+
+    .products .product .stickers
+    {
+        top: 30px;
+        right: 30px;
+
+        font-size: 10px;
+    }
+
+
+    .products .product .thumb
+    {
+        margin-bottom: var(--inner_gap);
+    }
+
+
+    .products .product .name
+    {
+        font-size: 16px;
+    }
+
+
+    .products .product .price
+    {
+        margin-top: var(--inner_gap_s);
+    }
+
+
+    .products .product .features > *
+    {
+        padding-block: 6px;
+        padding-inline: 8px;
+    }
+
+
+    .products .product .buy
+    {
+        margin-top: var(--inner_gap);
+    }
+
+
+    .products .product .buy .btn
+    {
+        width: calc(100% - 49px);
+        height: 48px;
+    }
+
+
+    .products .product .buy .whatsapp_link
+    {
+        width: 48px;
+        height: 48px;
+    }
+
+
+
+    .products .action
+    {
+        padding-block: var(--cont_padding_double);
+        padding-inline: var(--inner_gap);
+    }
+
+
+    .products .action .title,
+    .products .action .desc
+    {
+        width: 260px;
+    }
+
+
+    .products .action .whatsapp_link
+    {
+        height: 48px;
+        margin-left: var(--cont_padding);
     }
 
 

@@ -53,6 +53,16 @@
 
 
 
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .contact_methods label div
+    {
+        height: 48px;
+    }
+
+
+
     /*-------------------
         First section
     -------------------*/
@@ -177,14 +187,14 @@
     }
 
 
-    .advantages .item1
+    .advantages .grid .item1
     {
         width: 33.333%;
         height: 381px;
     }
 
 
-    .advantages .item2
+    .advantages .grid .item2
     {
         left: calc(33.333% - 1px);
 
@@ -193,7 +203,7 @@
     }
 
 
-    .advantages .item3
+    .advantages .grid .item3
     {
         right: 0;
 
@@ -202,7 +212,7 @@
     }
 
 
-    .advantages .item4
+    .advantages .grid .item4
     {
         top: 33.333%;
         left: calc(33.333% - 1px);
@@ -212,7 +222,7 @@
     }
 
 
-    .advantages .item5
+    .advantages .grid .item5
     {
         top: 33.333%;
         right: 0;
@@ -224,7 +234,7 @@
     }
 
 
-    .advantages .item6
+    .advantages .grid .item6
     {
         right: 0;
 
@@ -252,5 +262,147 @@
     .reviews .swiper-slide
     {
         width: 320px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info:before
+    {
+        display: none;
+    }
+
+
+    .product_info .images
+    {
+        width: 100%;
+    }
+
+
+    .product_info .data
+    {
+        position: relative;
+        top: 0;
+
+        width: 100%;
+        margin-top: var(--cont_padding);
+    }
+
+
+    .product_info .data .head
+    {
+        margin-bottom: var(--inner_gap);
+    }
+
+
+    .product_info .info
+    {
+        width: 100%;
+        margin-top: var(--cont_padding);
+    }
+
+
+
+    /*-------------------
+        Category head
+    -------------------*/
+    .category_head .title
+    {
+        width: 424px;
+    }
+
+
+    .category_head .bg
+    {
+        width: 1280px;
+    }
+
+
+    .category_head .shadow:before
+    {
+        height: 100px;
+    }
+
+
+    .category_head .shadow .darking3
+    {
+        top: 144px;
+    }
+
+
+
+    /*------------
+        Filter
+    ------------*/
+    .filter .mini_modal
+    {
+        width: 100%;
+        margin-top: var(--inner_gap_s);
+    }
+
+
+
+    /*-------------------
+        Category info
+    -------------------*/
+    .category_info .count
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .grid_row
+    {
+        --count_per_line: 2;
+    }
+
+
+
+    .products .action
+    {
+        gap: var(--inner_gap);
+    }
+
+
+    .products .action .title
+    {
+        width: 248px;
+    }
+
+
+    .products .action .desc
+    {
+        width: 236px;
+    }
+
+
+    .products .action .whatsapp_link
+    {
+        width: 154px;
+        margin-left: 0;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal_title
+    {
+        font-size: 28px;
+    }
+
+
+    .modal .form
+    {
+        margin-top: var(--cont_padding);
+
+        --form_input_height: 52px;
     }
 }
